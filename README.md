@@ -24,8 +24,10 @@ I’m Camilo, a **Systems Engineer**  and educator, specialized in **Project Man
 I’m deeply passionate about **science** and **research**, exploring:  
 
 - 🤖 Artificial Intelligence  
-- 🤖 Robotics  
-- 🗺 Geographic Information Systems (GIS)  
+- 🤖 Robotics
+- 🔬 Data analytics
+- 🗺 Geographic Information Systems (GIS)
+- 🌎 Spatial databases
 - 🌌 Astronomy & Space Exploration  
 - 🌿 Nature & Environmental Preservation  
 
@@ -49,8 +51,10 @@ Soy Camilo, **Ingeniero de Sistemas** y docente, con especialización en **Geren
 Apasionado por la **ciencia** y la **investigación**, me interesa explorar:  
 
 - 🤖 Inteligencia Artificial  
-- 🤖 Robótica  
-- 🗺 Sistemas de Información Geográfica (SIG)  
+- 🤖 Robótica
+- 🔬 Analítica de datos
+- 🗺 Sistemas de Información Geográfica (SIG)
+- 🌎 Bases de datos espaciales
 - 🌌 Astronomía y exploración espacial  
 - 🌿 Naturaleza y preservación ambiental  
 
