@@ -1,0 +1,41 @@
+name: Update public profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 11 * * 2' # Tuesday, 06:23 in Colombia
+  push:
+    branches: [master]
+    paths:
+      - scripts/update_stats.py
+      - .github/workflows/update-profile-stats.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'ciaocamilo/ciaocamilo'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate cards from public GitHub data
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_stats.py
+      - name: Commit updated snapshot
+        run: |
+          git add assets/stats.svg assets/languages.svg assets/github-stats.json
+          if git diff --cached --quiet; then
+            echo "No changes to public profile stats."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh public profile stats"
+          git push

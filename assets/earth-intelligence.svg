@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Earth and Intelligence — Building software. Exploring ideas.</title>
+  <desc id="desc">A turquoise globe and a slowly orbiting satellite above an abstract Andean mountain landscape. Software, artificial intelligence and Earth science.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#071421"/><stop offset="1" stop-color="#102b32"/></linearGradient>
+    <radialGradient id="globe" cx=".3" cy=".25" r=".8"><stop stop-color="#267b84"/><stop offset=".5" stop-color="#113d50"/><stop offset="1" stop-color="#081c2c"/></radialGradient>
+    <linearGradient id="land" x2="1" y2="1"><stop stop-color="#79dec1"/><stop offset="1" stop-color="#32898b"/></linearGradient>
+    <linearGradient id="ridge" x2="1"><stop stop-color="#173643"/><stop offset="1" stop-color="#265348"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#47dbbb" stop-opacity=".16"/><stop offset="1" stop-color="#47dbbb" stop-opacity="0"/></radialGradient>
+    <clipPath id="round"><rect width="1280" height="440" rx="20"/></clipPath>
+    <clipPath id="sphere"><circle r="127"/></clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#80dfcb" stroke-opacity=".035"/></pattern>
+  </defs>
+  <style>
+    text{font-family:Arial,Helvetica,sans-serif}
+    .orbit{animation:orbit 30s linear infinite;transform-origin:0 0}
+    .signal{animation:signal 5s ease-in-out infinite}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes signal{0%,100%{opacity:.3}50%{opacity:.9}}
+    @media(prefers-reduced-motion:reduce){.orbit,.signal{animation:none}}
+  </style>
+  <g clip-path="url(#round)">
+    <rect width="1280" height="440" fill="url(#background)"/>
+    <rect width="1280" height="440" fill="url(#grid)"/>
+    <circle cx="1000" cy="188" r="256" fill="url(#halo)"/>
+    <g fill="#b1dddf" opacity=".6">
+      <circle cx="703" cy="51" r="1.5"/><circle cx="762" cy="153" r="1"/><circle cx="850" cy="40" r="1"/>
+      <circle cx="1202" cy="60" r="1.5"/><circle cx="1170" cy="251" r="1"/><circle cx="801" cy="280" r="1.5"/>
+      <circle cx="671" cy="233" r="1"/><circle cx="1124" cy="21" r="1"/><circle cx="1226" cy="181" r="1"/>
+    </g>
+    <g transform="translate(1000 185) rotate(-20)">
+      <circle r="164" fill="none" stroke="#75dcca" stroke-opacity=".24" stroke-dasharray="3 9"/>
+      <ellipse rx="208" ry="69" fill="none" stroke="#70cbcf" stroke-opacity=".23"/>
+      <circle r="127" fill="url(#globe)" stroke="#80dfcd" stroke-opacity=".7"/>
+      <g clip-path="url(#sphere)">
+        <g fill="none" stroke="#72c6c5" stroke-opacity=".2">
+          <ellipse rx="49" ry="127"/><ellipse rx="94" ry="127"/>
+          <ellipse rx="127" ry="42"/><ellipse rx="127" ry="85"/>
+          <path d="M-127 0H127M0-127V127"/>
+        </g>
+        <g fill="url(#land)" opacity=".8">
+          <path d="M-97-83L-73-107-48-100-38-81-16-77-9-54-25-36-23-16-38-4-45 13-57 7-68-15-88-27-96-54-113-66Z"/>
+          <path d="M-41 16L-16 8 8 25 14 43 4 61-2 85-21 113-29 96-32 65-48 42Z"/>
+          <path d="M14-78L43-91 68-78 103-74 114-42 97-23 76-30 60-16 42-25 20-16 10-42 26-53Z"/>
+          <path d="M33-8L60-13 78 4 72 30 56 57 42 46 28 18Z"/>
+          <path d="M87 59L110 55 119 77 98 89 81 75Z"/>
+        </g>
+        <g fill="none" stroke="#a1f1d0" stroke-width="1.5" opacity=".8"><path d="M-44 10Q-10-59 53-44M-44 10Q6 61 53 19M53-44Q101-8 53 19"/></g>
+        <g fill="#d4ffdf"><circle cx="-44" cy="10" r="3.5"/><circle cx="53" cy="-44" r="3"/><circle cx="53" cy="19" r="3"/></g>
+        <circle class="signal" cx="-44" cy="10" r="11" fill="none" stroke="#b6ffda"/>
+      </g>
+      <g class="orbit"><g transform="translate(0 -164) rotate(25)">
+        <path d="M-25 0H25" stroke="#acdcd8" stroke-width="2"/>
+        <rect x="-31" y="-8" width="20" height="16" rx="2" fill="#174d65" stroke="#8ddacc"/>
+        <rect x="11" y="-8" width="20" height="16" rx="2" fill="#174d65" stroke="#8ddacc"/>
+        <path d="M-21-8V8M21-8V8M-31 0H-11M11 0H31" stroke="#6ac4bb" stroke-opacity=".7"/>
+        <rect x="-7" y="-10" width="14" height="20" rx="3" fill="#d0efdb"/>
+        <path d="M0-10V-16" stroke="#d0efdb" stroke-width="2"/>
+      </g></g>
+    </g>
+    <path d="M58 57H83" stroke="#6de4bf" stroke-width="3"/>
+    <text x="95" y="62" fill="#85dcca" font-size="13" letter-spacing="3">EARTH &amp; INTELLIGENCE</text>
+    <text x="56" y="140" fill="#f2f7f8" font-size="49" font-weight="700" letter-spacing="-1">Building software.</text>
+    <text x="56" y="196" fill="#f2f7f8" font-size="49" font-weight="700" letter-spacing="-1">Exploring ideas.</text>
+    <text x="59" y="241" fill="#a8c8cf" font-size="20">Where technology meets scientific curiosity.</text>
+    <text x="59" y="285" fill="#76d7b5" font-size="16">Learn. Create. Share.</text>
+    <path d="M0 412L108 382 183 395 289 351 359 387 449 356 552 394 666 332 729 357 832 288 907 346 973 301 1068 361 1150 323 1280 380V440H0Z" fill="#102830"/>
+    <path d="M0 441L143 413 244 428 404 389 496 410 627 375 714 402 840 325 916 384 1001 350 1094 398 1198 368 1280 399V440Z" fill="url(#ridge)"/>
+    <path d="M627 375L714 402 840 325 916 384 1001 350 1094 398 1198 368 1280 399" fill="none" stroke="#5dbeab" stroke-opacity=".4"/>
+    <path d="M811 343L840 325 867 346 842 338 831 346 826 337Z" fill="#b9e4d7" opacity=".8"/>
+    <text x="59" y="378" fill="#8babb3" font-size="11" letter-spacing="2.5">COLOMBIA / A WORLD OF POSSIBILITIES</text>
+    <rect width="1279" height="439" x=".5" y=".5" rx="20" fill="none" stroke="#3e7776" stroke-opacity=".35"/>
+  </g>
+</svg>
