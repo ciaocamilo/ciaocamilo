@@ -10,11 +10,11 @@ Three.js cannot run inside the GitHub README. A future interactive portfolio cou
 
 ## Statistics
 
-`python3 scripts/update_stats.py` fetches the public user profile and paginated public repository metadata from GitHub's REST API using only Python's standard library. It outputs:
+`python3 scripts/update_stats.py` fetches the public user profile and paginated public repository metadata and every original repository’s language breakdown from GitHub's REST API using only Python's standard library. It outputs:
 
 - `assets/stats.svg`: all owned public repositories, stars/forks received on original public repositories, and followers.
-- `assets/languages.svg`: repository counts grouped by their primary detected language, excluding forks and repositories without a language. These percentages are not code-byte shares, skill ratings or time spent coding.
-- `assets/github-stats.json`: the public aggregate snapshot used for the cards, including its UTC date.
+- `assets/languages.svg`: total bytes per language reported by the GitHub REST `/repos/{owner}/{repo}/languages` endpoint, aggregated over owned public non-fork repositories. Each share is language bytes divided by all detected bytes; the top seven categories are shown separately and the rest grouped as Other. These are not skill ratings or time spent coding. Jupyter Notebook and HTML are retained as GitHub reports them, so notebooks and exported reports may dominate. Private professional work is absent. Display percentages are apportioned in tenths to avoid a rounding total above 100%; a nonzero share below display precision is labeled <0.1%.
+- `assets/github-stats.json`: the public snapshot used for the cards, including its UTC date, metric identifier, aggregate bytes and auditable per-repository language bytes. Old repository-count snapshots are rejected rather than silently treated as bytes.
 
 The updater finishes fetching and rendering before changing these files. A network or API failure fails the job before committing, preserving the published cards. A rejected push also fails visibly rather than overwriting concurrent changes.
 
@@ -43,3 +43,11 @@ Keep GeoAI and remote sensing as general interests. Do not disclose the early-st
 The name remains indexable in a centered HTML H1. The banner uses a complementary motto instead of repeating the name. Preserve the existing illustration and animation when editing banner text.
 
 Future work, outside this draft: align account bio and social links; add a return link to the GitHub profile from other professional pages where supported; review each featured repository's description, topics and README according to its actual content. A separate portfolio may later provide controllable metadata and a Three.js experience alongside accessible HTML text.
+
+## Project images and technology logos
+
+The README embeds actual screenshots and plots from the featured public repositories, with descriptive alt text, captions and links to full-size images. Images stored in repositories use pinned revisions to keep the reviewed captures stable. The Tolima dashboard capture is the existing GitHub attachment linked from that project’s README; it shows historical data, not a live feed. Its long portrait layout is displayed as a compact overview. Update the URLs when a newer capture is reviewed.
+
+Technology logos are vendored from [Devicon v2.17.0](https://github.com/devicons/devicon/tree/v2.17.0), with the upstream MIT license in `assets/icons/LICENSE-devicon.txt`. Logos identify technologies, not endorsements. Social link badges are local text SVGs matching the profile palette; text links in the academic section and footer preserve indexable professional profile names.
+
+The weekly workflow makes one language API request per original public repository, in batches of up to four concurrent requests. Any failed request aborts the refresh before files are written, avoiding partially aggregated statistics.

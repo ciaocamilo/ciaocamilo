@@ -2,6 +2,7 @@
 """Render public GitHub REST data as local SVG cards (Python stdlib only)."""
 import argparse
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html import escape
 import json
@@ -11,7 +12,7 @@ import re
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
-COLORS = ['#6de4bf', '#64c9df', '#b6d882', '#8fa9eb', '#d6c284', '#b995d6', '#728e99']
+COLORS = ['#6de4bf', '#64c9df', '#b6d882', '#8fa9eb', '#d6c284', '#b995d6', '#f0a28e', '#728e99']
 
 
 def get_json(path):
@@ -38,13 +39,41 @@ def collect(username):
             break
         page += 1
     original = [r for r in repos if not r['fork']]
+    # Use every detected language, not just the repository's primary language.
+    # Keep a per-repository breakdown so the aggregate can be audited.
+    def repository_languages(repo):
+        values = get_json(f'/repos/{username}/{repo["name"]}/languages')
+        if not isinstance(values, dict) or any(type(n) is not int or n < 0 for n in values.values()):
+            raise ValueError(f'Invalid language data for {repo["name"]}')
+        return repo['name'], values
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        breakdown = dict(sorted(pool.map(repository_languages, original)))
+    totals = Counter()
+    for values in breakdown.values():
+        totals.update(values)
     return {
         'username': username, 'updated': datetime.now(timezone.utc).strftime('%Y-%m-%d'),
         'repositories': len(repos), 'stars': sum(r['stargazers_count'] for r in original),
         'forks': sum(r['forks_count'] for r in original), 'followers': user['followers'],
-        'languages': dict(sorted(Counter(r['language'] for r in original if r['language']).items(),
-                                 key=lambda x: (-x[1], x[0]))),
+        'language_metric': 'github_language_bytes',
+        'language_scope': 'owned_public_non_fork_repositories',
+        'language_repositories': sum(bool(values) for values in breakdown.values()),
+        'languages': dict(sorted(totals.items(), key=lambda x: (-x[1], x[0]))),
+        'repository_languages': breakdown,
     }
+
+
+def percentage_labels(values):
+    """Allocate tenths of a percent without rounding the visible total above 100%."""
+    total = sum(values)
+    if not total:
+        return ['0.0%' for _ in values]
+    units = [value * 1000 // total for value in values]
+    order = sorted(range(len(values)), key=lambda i: (-(values[i] * 1000 % total), i))
+    for i in order[:1000 - sum(units)]:
+        units[i] += 1
+    return [f'{value / 10:.1f}%' if value else '<0.1%' for value in units]
 
 
 def svg(title, description, content):
@@ -69,26 +98,31 @@ def render(data):
     summary = '. '.join(f'{name}: {value}' for name, value in metrics)
     stats = svg('Public GitHub profile', summary, content)
 
-    languages = list(data['languages'].items())
-    if len(languages) > 7:
-        languages = languages[:6] + [('Other', sum(n for _, n in languages[6:]))]
+    if data.get('language_metric') != 'github_language_bytes':
+        raise ValueError('Old repository-count snapshot: run without --from-json to collect byte totals')
+    languages = sorted(((name, n) for name, n in data['languages'].items() if n > 0),
+                       key=lambda x: (-x[1], x[0]))
+    if len(languages) > 8:
+        languages = languages[:7] + [('Other', sum(n for _, n in languages[7:]))]
     total = sum(n for _, n in languages)
-    content = label(24, 34, 'Languages across repositories', 18, '#edf6f7', '700')
-    content += label(24, 55, 'Primary language · Owned public repos · No forks', 10)
+    content = label(24, 34, 'Languages by code size', 18, '#edf6f7', '700')
+    content += label(24, 55, 'GitHub-reported bytes · Public repos · No forks', 10)
     if total:
         x = 24
+        percentages = percentage_labels([n for _, n in languages])
         for i, (name, count) in enumerate(languages):
             width = 392 * count / total
             content += f'<rect x="{x:.2f}" y="72" width="{width:.2f}" height="9" fill="{COLORS[i]}"/>'
             x += width
             lx, ly = 24 + i % 2 * 210, 107 + i // 2 * 26
             content += f'<circle cx="{lx + 4}" cy="{ly - 4}" r="4" fill="{COLORS[i]}"/>'
-            content += label(lx + 15, ly, f'{name} {100 * count / total:.0f}%', 11)
-        content += label(24, 221, f'{total} repositories with a detected language · {data["updated"]}', 10)
+            content += label(lx + 15, ly, f'{name} {percentages[i]}', 11)
+        content += label(24, 208, 'Includes notebooks and HTML; not a skill rating.', 10)
+        content += label(24, 225, f'{data["language_repositories"]} repos · {total:,} bytes · {data["updated"]}', 10)
     else:
         content += label(24, 120, 'No detected languages yet.')
-    description = '; '.join(f'{name}: {count} repositories' for name, count in languages)
-    return stats, svg('Primary languages by repository count', description, content)
+    description = '; '.join(f'{name}: {count} bytes' for name, count in languages)
+    return stats, svg('Languages by GitHub-reported bytes', description, content)
 
 
 def main():

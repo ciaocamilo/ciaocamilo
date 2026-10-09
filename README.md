@@ -11,11 +11,12 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/camilocastanedagalindo">LinkedIn</a> ·
-  <a href="https://scholar.google.com/citations?user=qGKkld8AAAAJ&amp;hl=en">Google Scholar</a> ·
-  <a href="https://www.researchgate.net/profile/Camilo-Andres-Castaneda-Galindo-2">ResearchGate</a> ·
-  <a href="https://github.com/ciaocamilo?tab=repositories">Repositories</a>
+  <a href="https://www.linkedin.com/in/camilocastanedagalindo"><img src="assets/social/linkedin.svg" height="38" alt="LinkedIn — Camilo Andrés Castañeda Galindo" /></a>
+  <a href="https://scholar.google.com/citations?user=qGKkld8AAAAJ&amp;hl=en"><img src="assets/social/scholar.svg" height="38" alt="Google Scholar — Camilo Andrés Castañeda Galindo" /></a>
+  <a href="https://www.researchgate.net/profile/Camilo-Andres-Castaneda-Galindo-2"><img src="assets/social/researchgate.svg" height="38" alt="ResearchGate — Camilo Andrés Castañeda Galindo" /></a>
 </p>
+
+<p align="center"><a href="https://github.com/ciaocamilo?tab=repositories"><strong>Explore my repositories →</strong></a></p>
 
 ## About Me / Professional Profile
 
@@ -43,6 +44,11 @@ An interactive application for exploring earthquakes in Tolima, Colombia, with m
 
 `Python` `Dash` `Plotly` `Folium` `scikit-learn`
 
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/289b0f37-6285-4245-a025-76ad3322fe5e"><img src="https://github.com/user-attachments/assets/289b0f37-6285-4245-a025-76ad3322fe5e" width="320" alt="Tolima Sísmico dashboard: earthquake maps, magnitude and depth charts, spatial clusters and event table." /></a>
+</p>
+<p align="center"><sub>Full dashboard capture from the project README; historical data shown. Click an image to view it at full size.</sub></p>
+
 [Open the Tolima Sísmico application](https://sismos-tolima-aplicacion-web.onrender.com/)
 
 ### 02 / [Cookie quality inspection — computer vision with OpenCV](https://github.com/ciaocamilo/control-calidad-galletas-vision-artificial)
@@ -52,12 +58,23 @@ Inspect cookies from a live webcam feed using classical image processing. The pr
 
 `Python` `OpenCV` `NumPy` `Image processing`
 
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/control-calidad-galletas-vision-artificial/a3e7128061e0d07ae944baf7588f3b2339187833/galleta_aprobada.png"><img src="https://raw.githubusercontent.com/ciaocamilo/control-calidad-galletas-vision-artificial/a3e7128061e0d07ae944baf7588f3b2339187833/galleta_aprobada.png" width="48%" alt="OpenCV webcam result: an intact cookie outlined in green and classified as approved." /></a>
+  <a href="https://raw.githubusercontent.com/ciaocamilo/control-calidad-galletas-vision-artificial/a3e7128061e0d07ae944baf7588f3b2339187833/galleta_quebrada.png"><img src="https://raw.githubusercontent.com/ciaocamilo/control-calidad-galletas-vision-artificial/a3e7128061e0d07ae944baf7588f3b2339187833/galleta_quebrada.png" width="48%" alt="OpenCV webcam result: a broken cookie outlined in red and classified as broken." /></a>
+</p>
+<p align="center"><sub>Intact and broken cookie detections. Click an image to view it at full size.</sub></p>
+
 ### 03 / [Traffic forecasting — ARIMA and LSTM time-series models](https://github.com/ciaocamilo/prediccion-trafico-arima-lstm)
 **Deep learning · Academic project**
 
 Compare statistical and neural approaches to hourly traffic forecasting. The notebook documents chronological train/validation/test splits, seasonal baselines and peak-hour error analysis, alongside data-quality checks and model limitations.
 
 `Python` `TensorFlow / Keras` `statsmodels` `Time series`
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png"><img src="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png" width="820" alt="Observed traffic volume compared with ARIMA and LSTM predictions on the test period." /></a>
+</p>
+<p align="center"><sub>Actual vs. predicted traffic across the test period. Click an image to view it at full size.</sub></p>
 
 ### 04 / [Transformers for technical support — practical model evaluation](https://github.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico)
 **Natural language processing · Academic project**
@@ -66,12 +83,22 @@ Evaluate pretrained models on controlled Spanish-language support scenarios: sen
 
 `Python` `Hugging Face Transformers` `PyTorch` `NLP`
 
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png"><img src="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png" width="820" alt="Results of the academic support-model evaluation: sentiment, tickets, summarization and translation." /></a>
+</p>
+<p align="center"><sub>Small, controlled academic examples; these results are not a general benchmark. Click an image to view it at full size.</sub></p>
+
 ### Creative coding / [ERS: Elefantes rosados en la ciudad](https://github.com/ciaocamilo/ERS-AI-Test)
 **Browser-based 3D · Interactive game**
 
 Fly a pink elephant through a 3D city and collect seven stars that change location on each restart. Includes keyboard and touch controls, guidance to the nearest star, sound rewards and an original synthesized soundtrack.
 
 `JavaScript` `Three.js` `WebGL`
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/ERS-AI-Test/77919c2812429a2468347071f58aa719c9652e1a/screenshots/01-vista-general.png"><img src="https://raw.githubusercontent.com/ciaocamilo/ERS-AI-Test/77919c2812429a2468347071f58aa719c9652e1a/screenshots/01-vista-general.png" width="820" alt="ERS game screenshot: a pink elephant flying over the city toward collectible stars." /></a>
+</p>
+<p align="center"><sub>In-game view of the city and star-collection challenge. Click an image to view it at full size.</sub></p>
 
 [Play ERS — Elefantes rosados en la ciudad](https://elefante-en-el-aire.ciaocamilo.chatgpt.site/)
 
@@ -89,6 +116,18 @@ Fly a pink elephant through a 3D city and collect seven stars that change locati
 </details>
 
 ## Tools I work with
+
+<p align="center">
+  <img src="assets/icons/python.svg" width="44" height="44" alt="Python logo" title="Python" /> &nbsp;
+  <img src="assets/icons/ruby.svg" width="44" height="44" alt="Ruby logo" title="Ruby" /> &nbsp;
+  <img src="assets/icons/java.svg" width="44" height="44" alt="Java logo" title="Java" /> &nbsp;
+  <img src="assets/icons/javascript.svg" width="44" height="44" alt="JavaScript logo" title="JavaScript" /> &nbsp;
+  <img src="assets/icons/rails.svg" width="44" height="44" alt="Ruby on Rails logo" title="Ruby on Rails" /> &nbsp;
+  <img src="assets/icons/vuejs.svg" width="44" height="44" alt="Vue.js logo" title="Vue.js" /> &nbsp;
+  <img src="assets/icons/postgresql.svg" width="44" height="44" alt="PostgreSQL logo" title="PostgreSQL" /> &nbsp;
+  <img src="assets/icons/docker.svg" width="44" height="44" alt="Docker logo" title="Docker" /> &nbsp;
+</p>
+<p align="center"><b>Python · Ruby · Java · JavaScript</b><br />Rails · Vue.js · PostgreSQL · Docker</p>
 
 | Area | Technologies |
 | :--- | :--- |
@@ -111,10 +150,19 @@ Academic profiles: [Camilo Andrés Castañeda Galindo on Google Scholar](https:/
 
 <p>
   <img src="assets/stats.svg" width="440" alt="Public GitHub statistics for ciaocamilo: repositories, stars, forks and followers, with snapshot date." />
-  <img src="assets/languages.svg" width="440" alt="Primary languages across ciaocamilo's public repositories, excluding forks and repositories without a detected language." />
+  <img src="assets/languages.svg" width="440" alt="Language distribution by GitHub-reported bytes across ciaocamilo's public repositories, excluding forks." />
 </p>
 
-<sub>Public repositories only. Language percentages describe repository counts, not proficiency or coding time.</sub>
+<sub>Language shares use the bytes reported by GitHub across owned public repositories, excluding forks. They describe repository contents, not proficiency or coding time. Jupyter Notebook and HTML remain separate categories; notebook files and exported reports can outweigh source files.</sub>
+
+<details>
+<summary><b>How these percentages are calculated</b></summary>
+
+For each public, non-fork repository, the updater reads **all languages** from GitHub's language API and adds their byte counts. Each percentage is `language bytes / total detected bytes × 100`. The seven largest categories appear individually; the remainder is grouped as **Other**. Displayed shares are apportioned in tenths of a percent to keep the rounded total at 100%.
+
+This includes academic and teaching repositories. Private work is not represented, and Jupyter Notebook is not automatically relabeled as Python. See the [auditable snapshot](assets/github-stats.json) for each repository's contribution and the [maintenance notes](docs/PROFILE_MAINTENANCE.md) for implementation details.
+
+</details>
 
 ---
 

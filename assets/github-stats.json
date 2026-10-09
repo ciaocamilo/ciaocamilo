@@ -5,13 +5,186 @@
   "stars": 14,
   "forks": 52,
   "followers": 26,
+  "language_metric": "github_language_bytes",
+  "language_scope": "owned_public_non_fork_repositories",
+  "language_repositories": 44,
   "languages": {
-    "Java": 16,
-    "Python": 8,
-    "Jupyter Notebook": 7,
-    "HTML": 5,
-    "JavaScript": 3,
-    "Vue": 3,
-    "Ruby": 2
+    "Jupyter Notebook": 25599308,
+    "HTML": 7414493,
+    "Java": 397563,
+    "Python": 226394,
+    "Ruby": 97910,
+    "Vue": 79273,
+    "JavaScript": 34046,
+    "CSS": 21873,
+    "Dockerfile": 2578,
+    "Shell": 2552,
+    "CoffeeScript": 422,
+    "SCSS": 354,
+    "Procfile": 140
+  },
+  "repository_languages": {
+    "ERS-AI-Test": {
+      "Python": 4771
+    },
+    "M-S1-AP1-Aplicacion-web-analisis": {
+      "Python": 27143,
+      "CSS": 221
+    },
+    "M-S1-AP1-Prediccion-nacimientos-machine-learning": {
+      "HTML": 5490906,
+      "Jupyter Notebook": 5437296
+    },
+    "M-S1-FIA-Logica-Difusa": {
+      "HTML": 631291,
+      "Jupyter Notebook": 296161
+    },
+    "M-S2-AP2-Actividad_5_Transformers_SoporteTecnico": {
+      "Jupyter Notebook": 109624,
+      "Python": 5072
+    },
+    "Sismos-Tolima-Aplicacion-web-analisis": {
+      "Python": 25387,
+      "CSS": 1377
+    },
+    "activity_joker_api": {
+      "JavaScript": 632
+    },
+    "activity_joker_web": {
+      "JavaScript": 1912,
+      "HTML": 1721,
+      "CSS": 930
+    },
+    "api-example-django": {
+      "Python": 9246,
+      "Procfile": 140
+    },
+    "api-tienda-pizzeria": {
+      "JavaScript": 7176
+    },
+    "aprendizaje-no-supervisado-calidad-agua": {
+      "Jupyter Notebook": 1332167
+    },
+    "ciaocamilo": {
+      "Python": 5425
+    },
+    "clasificacion-clima-australia": {
+      "HTML": 1167662,
+      "Jupyter Notebook": 818417
+    },
+    "cohete_ciclo_1": {
+      "Python": 3561
+    },
+    "control-calidad-galletas-vision-artificial": {
+      "Jupyter Notebook": 16184
+    },
+    "ejemplos-python": {
+      "Python": 115455
+    },
+    "festival-retos": {
+      "Java": 27490
+    },
+    "hola_mundo_04": {
+      "Java": 47300
+    },
+    "hola_mundo_movil_05": {
+      "Java": 46104
+    },
+    "menteSana": {
+      "Java": 25948
+    },
+    "mi-app-android": {
+      "Java": 44969
+    },
+    "misiontic-app-tareas-pendientes": {
+      "Java": 6420
+    },
+    "misiontic2022": {
+      "Java": 12542
+    },
+    "ml-regresion-transporte-mio": {
+      "Jupyter Notebook": 605832
+    },
+    "pendientes-app": {
+      "Java": 8443
+    },
+    "prediccion-trafico-arima-lstm": {
+      "Jupyter Notebook": 2508741
+    },
+    "proyectos_grupo_56": {
+      "Java": 23322
+    },
+    "proyectos_grupo_66": {
+      "Java": 25448
+    },
+    "proyectos_gui_grupo_56": {
+      "Java": 38301
+    },
+    "proyectos_gui_grupo_66": {
+      "Java": 38821
+    },
+    "proyectos_movil_03": {
+      "Java": 47480
+    },
+    "proyectos_web_56": {
+      "Vue": 26239,
+      "HTML": 26217,
+      "JavaScript": 7502,
+      "CSS": 6317
+    },
+    "proyectos_web_66": {
+      "Vue": 26369,
+      "HTML": 24584,
+      "JavaScript": 7384,
+      "CSS": 6721
+    },
+    "prueba56": {
+      "Java": 2341
+    },
+    "prueba66": {
+      "Java": 2490
+    },
+    "python-astronomia": {
+      "Jupyter Notebook": 1306780
+    },
+    "python-inteligencia_artificisl": {
+      "Jupyter Notebook": 13168106,
+      "Python": 13126
+    },
+    "repo-compartido-03": {},
+    "repo-compartido-56": {
+      "HTML": 263
+    },
+    "repo-compartido-66": {
+      "HTML": 583
+    },
+    "retos-python-2021": {
+      "Python": 17208
+    },
+    "ruby-terminal-transportes": {
+      "Ruby": 76878,
+      "HTML": 60740,
+      "Dockerfile": 2578,
+      "Shell": 2552,
+      "JavaScript": 1808,
+      "CSS": 1806
+    },
+    "ruby-test-project": {
+      "Ruby": 21032,
+      "HTML": 9145,
+      "JavaScript": 1156,
+      "CSS": 709,
+      "CoffeeScript": 422,
+      "SCSS": 354
+    },
+    "test": {
+      "Java": 144
+    },
+    "tienda-ca": {
+      "Vue": 26665,
+      "JavaScript": 6476,
+      "CSS": 3792,
+      "HTML": 1381
+    }
   }
 }
