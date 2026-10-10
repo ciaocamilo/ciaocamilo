@@ -51,3 +51,9 @@ The README embeds actual screenshots and plots from the featured public reposito
 Technology logos are vendored from [Devicon v2.17.0](https://github.com/devicons/devicon/tree/v2.17.0), with the upstream MIT license in `assets/icons/LICENSE-devicon.txt`. Logos identify technologies, not endorsements. Social link badges are local text SVGs matching the profile palette; text links in the academic section and footer preserve indexable professional profile names.
 
 The weekly workflow makes one language API request per original public repository, in batches of up to four concurrent requests. Any failed request aborts the refresh before files are written, avoiding partially aggregated statistics.
+
+## Professional presentation and counter
+
+The short professional introduction and technology logos precede selected projects. The full technology table and language distribution are expandable. Experience is stated consistently as 12+ combined years, covering development, coordination and teaching. Project summaries distinguish implementation or evaluation from deliverables without inventing commercial impact.
+
+The footer restores Komarev with the original `username=ciaocamilo`, a muted turquoise color and abbreviated numbers. The number is an approximate image-request counter, not unique visitors or Google search traffic. No artificial base offset is used. Historical continuity depends on the provider retaining the original record.
