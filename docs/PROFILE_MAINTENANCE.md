@@ -56,4 +56,6 @@ The weekly workflow makes one language API request per original public repositor
 
 The short professional introduction and technology logos precede selected projects. The full technology table and language distribution are expandable. Experience is stated consistently as 12+ combined years, covering development, coordination and teaching. Project summaries distinguish implementation or evaluation from deliverables without inventing commercial impact.
 
-The footer restores Komarev with the original `username=ciaocamilo`, a muted turquoise color and abbreviated numbers. The number is an approximate image-request counter, not unique visitors or Google search traffic. No artificial base offset is used. Historical continuity depends on the provider retaining the original record.
+The footer restores Komarev with the original `username=ciaocamilo`, a muted turquoise color, flat-square styling and an unabridged count. The number is an approximate image-request counter, not unique visitors or Google search traffic. No artificial base offset is used. Historical continuity depends on the provider retaining the original record.
+
+Counter troubleshooting: verify the image URL actually rendered by GitHub (Camo), not only the provider URL. The original restored URL returned HTTP 200 at the provider but HTTP 404 through Camo; its URL was refreshed while retaining the same username. This does not reset or artificially offset the counter.
