@@ -175,6 +175,6 @@ This includes academic and teaching repositories. Private work is not represente
 <a href="https://www.linkedin.com/in/camilocastanedagalindo">Connect with Camilo on LinkedIn →</a></p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ciaocamilo&amp;style=flat-square&amp;color=2b9986&amp;label=Profile+views" alt="Approximate profile view counter for ciaocamilo" />
-  <br /><sub>Approximate image-request count, not unique visitors.</sub>
+  <a href="https://hits.sh/github.com/ciaocamilo/profile-20261010/"><img src="https://hits.sh/github.com/ciaocamilo/profile-20261010.svg?style=flat-square&amp;label=Profile%20views&amp;color=2b9986&amp;extraCount=392" alt="Approximate profile view counter for ciaocamilo" /></a>
+  <br /><sub>Approximate views, not unique visitors. Includes 392 recorded by the previous counter.</sub>
 </p>
