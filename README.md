@@ -101,14 +101,16 @@ Developed incrementally with **Specification-Driven Development (SDD)** and auto
 `TypeScript` `Three.js` `Python` `Pyodide` `Web Workers` `Web Audio`
 
 <p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/refs/heads/main/docs/images/portada.png"><img src="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/refs/heads/main/docs/images/portada.png" width="820" alt="RTS Camilus visual test scene: soldiers and archers beside burning medieval buildings, with a damaged tower selected." /></a>
+</p>
+<p align="center"><sub>Visual test scene showing fire, damaged buildings and unit detail.</sub></p>
+<br>
+
+<p align="center">
   <a href="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/partida-actual.png"><img src="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/partida-actual.png" width="820" alt="RTS Camilus starting settlement: medieval houses, defensive towers, forests, town-center selection and a live minimap." /></a>
 </p>
 <p align="center"><sub>Build your settlement, manage resources and prepare your defenses.</sub></p>
-
-<p align="center">
-  <a href="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/portada.png"><img src="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/portada.png" width="820" alt="RTS Camilus visual test scene: soldiers and archers beside burning medieval buildings, with a damaged tower selected." /></a>
-</p>
-<p align="center"><sub>Visual test scene showing fire, damaged buildings and unit detail.</sub></p>
+<br>
 
 [Explore RTS Camilus — code, screenshots and local setup](https://github.com/ciaocamilo/rts-experimental)
 
