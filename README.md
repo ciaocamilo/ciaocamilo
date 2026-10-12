@@ -68,10 +68,13 @@ Explore earthquake activity in Tolima using Colombian Geological Survey (SGC) da
 
 `Python` `Dash` `Plotly` `Folium` `scikit-learn`
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/289b0f37-6285-4245-a025-76ad3322fe5e"><img src="https://github.com/user-attachments/assets/289b0f37-6285-4245-a025-76ad3322fe5e" width="180" alt="Tolima Sísmico dashboard: earthquake maps, magnitude and depth charts, spatial clusters and event table." /></a>
-</p>
-<p align="center"><sub>Historical dashboard capture. Open the image for full detail.</sub></p>
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="assets/projects/tolima-overview.png"><img src="assets/projects/tolima-overview.png" width="100%" alt="Tolima Sísmico dashboard: earthquake indicators, satellite and magnitude maps, daily activity and distributions." /></a></td>
+    <td width="50%" valign="top"><a href="assets/projects/tolima-analysis.png"><img src="assets/projects/tolima-analysis.png" width="100%" alt="Tolima Sísmico analysis: locations, hourly activity, earthquake density, spatial clusters and detailed event records." /></a></td>
+  </tr>
+</table>
+<p align="center"><sub>Maps and seismic indicators · Spatial patterns and event records. Historical captures; click either image to enlarge.</sub></p>
 
 [Open the Tolima Sísmico application](https://sismos-tolima-aplicacion-web.onrender.com/)
 
@@ -88,31 +91,28 @@ Distinguish intact cookies from broken ones using a live webcam. **Implementatio
 </p>
 <p align="center"><sub>Intact vs. broken cookie detection.</sub></p>
 
-### 03 / [Traffic forecasting — ARIMA and LSTM time-series models](https://github.com/ciaocamilo/prediccion-trafico-arima-lstm)
-**Deep learning · Academic project**
+### 03 / [RTS Camilus — real-time strategy with a Python-powered opponent](https://github.com/ciaocamilo/rts-experimental)
+**3D strategy · Browser game · Experimental prototype**
 
-Compare ARIMA and LSTM for hourly traffic forecasting. **Evaluation:** chronological train/validation/test splits, seasonal baselines and peak-hour error analysis. **Deliverable:** a notebook with comparative predictions, data-quality checks and documented limitations.
+Build a medieval settlement, gather resources and command soldiers and archers against an AI-controlled rival. Defend your town, secure the river crossing and destroy the opposing town center. **Engineering:** a deterministic TypeScript simulation rendered with Three.js, with the opponent's decision-making policy running in Python through Pyodide in a Web Worker. **Experience:** procedural landscapes, animated fire and smoke, building destruction, synthesized music and sound effects.
 
-`Python` `TensorFlow / Keras` `statsmodels` `Time series`
+Developed incrementally with **Specification-Driven Development (SDD)** and automated tests. *RTS Camilus is a provisional name.*
 
-<p align="center">
-  <a href="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png"><img src="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png" width="820" alt="Observed traffic volume compared with ARIMA and LSTM predictions on the test period." /></a>
-</p>
-<p align="center"><sub>Actual vs. predicted traffic on the test set.</sub></p>
-
-### 04 / [Transformers for technical support — practical model evaluation](https://github.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico)
-**Natural language processing · Academic project**
-
-Evaluate pretrained models for Spanish-language technical support. **Scope:** sentiment, ticket classification, summarization and translation. **Deliverable:** a comparative notebook documenting successes, failures and an extractive alternative to abstractive summarization.
-
-`Python` `Hugging Face Transformers` `PyTorch` `NLP`
+`TypeScript` `Three.js` `Python` `Pyodide` `Web Workers` `Web Audio`
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png"><img src="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png" width="820" alt="Results of the academic support-model evaluation: sentiment, tickets, summarization and translation." /></a>
+  <a href="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/partida-actual.png"><img src="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/partida-actual.png" width="820" alt="RTS Camilus starting settlement: medieval houses, defensive towers, forests, town-center selection and a live minimap." /></a>
 </p>
-<p align="center"><sub>Controlled academic examples; not a general benchmark.</sub></p>
+<p align="center"><sub>Build your settlement, manage resources and prepare your defenses.</sub></p>
 
-### Creative coding / [ERS: Elefantes rosados en la ciudad](https://github.com/ciaocamilo/ERS-AI-Test)
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/portada.png"><img src="https://raw.githubusercontent.com/ciaocamilo/rts-experimental/e3f01dc982c4b21fcdc29122ad3f535201ed9053/docs/images/portada.png" width="820" alt="RTS Camilus visual test scene: soldiers and archers beside burning medieval buildings, with a damaged tower selected." /></a>
+</p>
+<p align="center"><sub>Visual test scene showing fire, damaged buildings and unit detail.</sub></p>
+
+[Explore RTS Camilus — code, screenshots and local setup](https://github.com/ciaocamilo/rts-experimental)
+
+### 04 / [ERS: Elefantes rosados en la ciudad](https://github.com/ciaocamilo/ERS-AI-Test)
 **Browser-based 3D · Interactive game**
 
 Fly a pink elephant through a 3D city and collect seven randomly positioned stars. **Features:** keyboard and touch controls, navigation guidance and synthesized audio. **Deliverable:** a playable browser game for desktop and mobile.
@@ -125,6 +125,30 @@ Fly a pink elephant through a 3D city and collect seven randomly positioned star
 <p align="center"><sub>Explore the city and collect seven stars.</sub></p>
 
 [Play ERS — Elefantes rosados en la ciudad](https://elefante-en-el-aire.ciaocamilo.chatgpt.site/)
+
+### 05 / [Transformers for technical support — practical model evaluation](https://github.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico)
+**Natural language processing · Academic project**
+
+Evaluate pretrained models for Spanish-language technical support. **Scope:** sentiment, ticket classification, summarization and translation. **Deliverable:** a comparative notebook documenting successes, failures and an extractive alternative to abstractive summarization.
+
+`Python` `Hugging Face Transformers` `PyTorch` `NLP`
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png"><img src="https://raw.githubusercontent.com/ciaocamilo/M-S2-AP2-Actividad_5_Transformers_SoporteTecnico/7a1c32f40b43adef7362532309af9a9bc4264cf4/images/resumen_desempeno.png" width="820" alt="Results of the academic support-model evaluation: sentiment, tickets, summarization and translation." /></a>
+</p>
+<p align="center"><sub>Controlled academic examples; not a general benchmark.</sub></p>
+
+### 06 / [Traffic forecasting — ARIMA and LSTM time-series models](https://github.com/ciaocamilo/prediccion-trafico-arima-lstm)
+**Deep learning · Academic project**
+
+Compare ARIMA and LSTM for hourly traffic forecasting. **Evaluation:** chronological train/validation/test splits, seasonal baselines and peak-hour error analysis. **Deliverable:** a notebook with comparative predictions, data-quality checks and documented limitations.
+
+`Python` `TensorFlow / Keras` `statsmodels` `Time series`
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png"><img src="https://raw.githubusercontent.com/ciaocamilo/prediccion-trafico-arima-lstm/421628475b20fa7611b144ef34f7a531575fad3e/images/trafico_comparacion_test.png" width="820" alt="Observed traffic volume compared with ARIMA and LSTM predictions on the test period." /></a>
+</p>
+<p align="center"><sub>Actual vs. predicted traffic on the test set.</sub></p>
 
 <details>
 <summary><b>More projects: supervised learning, clustering and fuzzy logic</b></summary>
