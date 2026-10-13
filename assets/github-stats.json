@@ -1,21 +1,22 @@
 {
   "username": "ciaocamilo",
-  "updated": "2026-10-09",
-  "repositories": 45,
+  "updated": "2026-10-13",
+  "repositories": 46,
   "stars": 14,
   "forks": 52,
   "followers": 26,
   "language_metric": "github_language_bytes",
   "language_scope": "owned_public_non_fork_repositories",
-  "language_repositories": 44,
+  "language_repositories": 45,
   "languages": {
     "Jupyter Notebook": 25599308,
-    "HTML": 7414493,
+    "HTML": 7437816,
+    "TypeScript": 812188,
     "Java": 397563,
-    "Python": 228185,
+    "Python": 289171,
     "Ruby": 97910,
     "Vue": 79273,
-    "JavaScript": 34046,
+    "JavaScript": 49283,
     "CSS": 21873,
     "Dockerfile": 2578,
     "Shell": 2552,
@@ -160,6 +161,12 @@
     },
     "retos-python-2021": {
       "Python": 17208
+    },
+    "rts-experimental": {
+      "TypeScript": 812188,
+      "Python": 60986,
+      "HTML": 23323,
+      "JavaScript": 15237
     },
     "ruby-terminal-transportes": {
       "Ruby": 76878,
