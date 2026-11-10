@@ -1,6 +1,6 @@
 {
   "username": "ciaocamilo",
-  "updated": "2026-11-03",
+  "updated": "2026-11-10",
   "repositories": 46,
   "stars": 14,
   "forks": 52,
@@ -10,13 +10,13 @@
   "language_repositories": 45,
   "languages": {
     "Jupyter Notebook": 25599308,
-    "HTML": 7437816,
-    "TypeScript": 812188,
+    "HTML": 7438344,
+    "TypeScript": 952261,
     "Java": 397563,
-    "Python": 289171,
+    "Python": 305163,
     "Ruby": 97910,
     "Vue": 79273,
-    "JavaScript": 49283,
+    "JavaScript": 51260,
     "CSS": 21873,
     "Dockerfile": 2578,
     "Shell": 2552,
@@ -163,10 +163,10 @@
       "Python": 17208
     },
     "rts-experimental": {
-      "TypeScript": 812188,
-      "Python": 60986,
-      "HTML": 23323,
-      "JavaScript": 15237
+      "TypeScript": 952261,
+      "Python": 76978,
+      "HTML": 23851,
+      "JavaScript": 17214
     },
     "ruby-terminal-transportes": {
       "Ruby": 76878,
