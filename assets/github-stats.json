@@ -1,22 +1,22 @@
 {
   "username": "ciaocamilo",
-  "updated": "2026-11-10",
-  "repositories": 46,
+  "updated": "2026-11-17",
+  "repositories": 47,
   "stars": 14,
   "forks": 52,
-  "followers": 26,
+  "followers": 28,
   "language_metric": "github_language_bytes",
   "language_scope": "owned_public_non_fork_repositories",
-  "language_repositories": 45,
+  "language_repositories": 46,
   "languages": {
-    "Jupyter Notebook": 25599308,
-    "HTML": 7438344,
-    "TypeScript": 952261,
+    "Jupyter Notebook": 25616624,
+    "HTML": 7442212,
+    "TypeScript": 1075383,
     "Java": 397563,
-    "Python": 305163,
+    "Python": 386056,
     "Ruby": 97910,
     "Vue": 79273,
-    "JavaScript": 51260,
+    "JavaScript": 53032,
     "CSS": 21873,
     "Dockerfile": 2578,
     "Shell": 2552,
@@ -43,6 +43,10 @@
     "M-S2-AP2-Actividad_5_Transformers_SoporteTecnico": {
       "Jupyter Notebook": 109624,
       "Python": 5072
+    },
+    "M-S2-CD-Proyecto-integrador-de-ciencia-de-datos": {
+      "Python": 42696,
+      "Jupyter Notebook": 17316
     },
     "Sismos-Tolima-Aplicacion-web-analisis": {
       "Python": 25387,
@@ -163,10 +167,10 @@
       "Python": 17208
     },
     "rts-experimental": {
-      "TypeScript": 952261,
-      "Python": 76978,
-      "HTML": 23851,
-      "JavaScript": 17214
+      "TypeScript": 1075383,
+      "Python": 115175,
+      "HTML": 27719,
+      "JavaScript": 18986
     },
     "ruby-terminal-transportes": {
       "Ruby": 76878,
