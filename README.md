@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Systems Engineer · Software Developer · Project Management</b><br />
-  MSc Student in Artificial Intelligence · Research interests in GeoAI &amp; Remote Sensing<br />
+  MSc Student in Artificial Intelligence · Research interests in GeoAI &amp; Remote Sensing and Computer Vision<br />
   Ibagué, Colombia · GitHub: <a href="https://github.com/ciaocamilo">@ciaocamilo</a>
 </p>
 
