@@ -1,19 +1,19 @@
 {
   "username": "ciaocamilo",
-  "updated": "2026-11-17",
-  "repositories": 47,
+  "updated": "2026-11-24",
+  "repositories": 49,
   "stars": 14,
   "forks": 52,
-  "followers": 28,
+  "followers": 27,
   "language_metric": "github_language_bytes",
   "language_scope": "owned_public_non_fork_repositories",
-  "language_repositories": 46,
+  "language_repositories": 48,
   "languages": {
-    "Jupyter Notebook": 25616624,
+    "Jupyter Notebook": 36808516,
     "HTML": 7442212,
-    "TypeScript": 1075383,
+    "TypeScript": 1075470,
+    "Python": 891791,
     "Java": 397563,
-    "Python": 386056,
     "Ruby": 97910,
     "Vue": 79273,
     "JavaScript": 53032,
@@ -167,7 +167,7 @@
       "Python": 17208
     },
     "rts-experimental": {
-      "TypeScript": 1075383,
+      "TypeScript": 1075470,
       "Python": 115175,
       "HTML": 27719,
       "JavaScript": 18986
@@ -187,6 +187,14 @@
       "CSS": 709,
       "CoffeeScript": 422,
       "SCSS": 354
+    },
+    "santa_isabel_yolo": {
+      "Jupyter Notebook": 10240065,
+      "Python": 346092
+    },
+    "selector-imagen-satelital": {
+      "Jupyter Notebook": 951827,
+      "Python": 159643
     },
     "test": {
       "Java": 144
